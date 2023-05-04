@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ClimaX</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="C:/Users/Enzo/Desktop/Tiempo/app_tiempo/clima/templates/estilos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">ClimaX</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/acerca/">Sobre ClimaX</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+</body>
+</html>

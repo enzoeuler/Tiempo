@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h3>El tiempo en las principales ciudades</h3>
+  {% for clima in climas %}
+    <div class="clima">
+      <h2 class="ciudad">{{ clima.ciudad }}</h2>
+      <p class="temperatura">Temperatura: {{ clima.temperatura }} ºC</p>
+      <p class="descripcion">Descripción: {{ clima.descripcion }}</p>
+      <img src="http://openweathermap.org/img/wn/{{ clima.icono }}.png">
+    </div>
+  {% endfor %}
+{% endblock %}
